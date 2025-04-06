@@ -3,8 +3,6 @@
   margin: 0;
 }
 
-
-
 .main-video {
   width: 100%;
   height: 500px;
@@ -47,8 +45,6 @@ a {
   left: 20px;
 }
 
-
-
 .top-r {
   width: 78%;
   display: flex;
@@ -78,12 +74,11 @@ a {
 
 .top-r .search:hover {
   border: 1px solid #fff;
-
 }
 
 .top-r .search:hover .search-bottom {
   background-image: linear-gradient(113deg, #00a8e6, #00b84d 50%, #00b84d);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .top-r .search input {
@@ -107,7 +102,7 @@ a {
 
 .top-r .search .search-bottom:hover {
   background-image: linear-gradient(113deg, #00a8e6, #00b84d 50%, #00b84d);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .top-r-tab {
@@ -120,7 +115,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .top-r-tab li {
@@ -227,9 +222,8 @@ a {
   align-items: center;
   justify-content: right;
   margin: 5px 0;
-  transition: .3s ease;
+  transition: 0.3s ease;
   padding-right: 10px;
-
 }
 
 .slide li:hover {
@@ -242,47 +236,56 @@ a {
 
 a {
   color: #b9bab9;
-
 }
 
 .slide li:hover a {
   color: #fff;
   font-size: 20px;
-
 }
 
 .video-cards {
-  position: relative;
+  /* position: relative; */
   /* top: 500px; */
+  margin-top: -10px;
   width: 100%;
   height: 1900px;
   background-color: black;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 1) 20%);
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 1) 8%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 1) 8%
+  );
   overflow: visible;
   /* filter: blur(2px); */
   /* 新增 */
 }
 
 .main-video-cards {
-  position: absolute;
-  /* top: -400px; */
-  left: 145px;
-  /* 左侧菜单宽度 */
-  right: 10px;
-  /* 右侧固定间距 */
-  width: auto;
-  /* 关键修改 */
-  height: 480px;
+  margin-left: 170px;
   padding: 0 10px;
+  /* position: absolute; */
+  /* top: -400px; */
+  /* left: 145px; */
+  /* 左侧菜单宽度 */
+  /* right: 10px; */
+  /* 右侧固定间距 */
+  /* width: auto; */
+  /* 关键修改 */
+  /* height: 480px;
+  padding: 0 10px; */
   /* background-color: pink; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* 包含padding */
-  overflow-x: auto;
+  /* overflow-x: auto; */
   /* 横向溢出时显示滚动条 */
-  white-space: nowrap;
+  /* white-space: nowrap;
   scrollbar-color: #535455 #2d2f31;
-  scrollbar-width: thin;
+  scrollbar-width: thin; */
   /* 保持内容不换行（可选） */
 }
 
@@ -345,7 +348,6 @@ a {
   background: rgba(136, 136, 136, 0.6);
 }
 
-
 .left-tab .tab-top {
   width: 85%;
   /* height: 240px; */
@@ -394,7 +396,6 @@ a {
 .tab-bottom {
   width: 85%;
   /* height: 100%; */
-
 }
 
 .tab-bottom ul {
@@ -426,7 +427,7 @@ a {
 }
 
 .tab-bottom ul li a {
-  color: rgba(255, 255, 255, 0.9)
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .tab-bottom ul li:nth-child(1) {
@@ -500,14 +501,16 @@ a {
 }
 
 .maybeLike {
-  position: absolute;
+  margin-left: 170px;
+  margin-top: 120px;
+  /* position: absolute;
   right: 10px;
   width: auto;
   padding: 0 10px;
   top: 460px;
-  left: 145px;
+  left: 145px; */
   /* background-color: #5858b9; */
-  height: 750px;
+  /* height: 750px; */
 }
 
 .maybeLike-top {
@@ -591,7 +594,7 @@ a {
   background-color: #37363697;
   border-radius: 10px;
   visibility: hidden;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .loginIntroduction .loginIntroduction-cab {
@@ -666,7 +669,6 @@ a {
 
 .beVIPl .kaitongVIP {
   height: 20px;
-
 }
 
 .beVIPl span {
@@ -704,12 +706,12 @@ a {
 }
 
 @media (max-width: 1200px) {
-  .login>span {
+  .login > span {
     display: none;
   }
 
   .icon-touxiang:before {
-    content: "\e62c";
+    content: '\e62c';
     /* margin-right: 10px; */
     text-align: center;
   }
@@ -732,7 +734,6 @@ a {
   justify-content: space-around;
   /* visibility: hidden;
 transition: all .5s; */
-
 }
 
 .loginCab .loginCabL {
@@ -741,7 +742,6 @@ transition: all .5s; */
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .loginCabR {
@@ -753,8 +753,6 @@ transition: all .5s; */
   justify-content: space-around;
   color: #fff;
 }
-
-
 
 .loginCabL img {
   width: 100%;
@@ -811,7 +809,6 @@ transition: all .5s; */
   font-size: 10px;
   /* background-color: pink; */
   display: flex;
-
 }
 
 .phoneiQIYI a {
@@ -864,10 +861,7 @@ transition: all .5s; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
-
-
 
 .loginCabR-bottom {
   width: 60%;
@@ -885,7 +879,7 @@ transition: all .5s; */
   color: #00da5a;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -905,7 +899,7 @@ input[type="checkbox"] {
   box-shadow: 0 0 10px 3px rgba(0, 255, 0, 0.7);
 }
 
-.loginCabRTabContent input[type="text"] {
+.loginCabRTabContent input[type='text'] {
   width: 180%;
   height: 30px;
   border: 1px solid #5c5959;
@@ -918,7 +912,7 @@ input[type="checkbox"] {
   margin-top: 15px;
 }
 
-.loginCabRTabContent input[type="password"] {
+.loginCabRTabContent input[type='password'] {
   width: 180%;
   height: 30px;
   border: 1px solid #5c5959;
